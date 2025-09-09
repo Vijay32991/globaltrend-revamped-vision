@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/", // ✅ This line fixes the blank page issue on Netlify
+
   server: {
     host: "::",
     port: 8080,
